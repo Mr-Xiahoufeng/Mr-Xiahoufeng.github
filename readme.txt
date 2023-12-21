@@ -5,3 +5,4 @@ Git tracks changes of files.
 Creating a new branch is quick.
 Counting Star
 Creating a new branch is quick & simple.
+main text.
