@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:divider="@drawable/fgx"
+    android:showDividers="middle"
+    android:dividerPadding="50dp">
+<!--    android:gravity="center_horizontal|bottom"-->
+<!--    >-->
+
+    <LinearLayout
+        android:background="#ff0000"
+        android:layout_weight="2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"        />
+<!--        android:layout_gravity="center";-->
+
+<!--    android:layout_weight权重分配的是剩余空间  -->
+    <LinearLayout
+        android:background="#ffff00"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+<!--另一种分割线设置-->
+    <View
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"        />
+
+    <LinearLayout
+        android:background="#00ffff"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+
+
+</LinearLayout>

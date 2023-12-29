@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--    match_parent匹配父元素, warp_content 匹配内容, xx dp  固定值设定，dp为单位-->
+
+        <!--       颜色为八位，两位一组，第一组控制透明度，由00~FF，后三组为红，绿，蓝三原色的设置   -->
+
+        <!--        自定义TextView用全类名-->
+<!--        <com.example.myapplication_1.MytextView-->
+        <TextView
+            android:id="@+id/textview_1"
+            android:text="@string/xiaji"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="30sp"
+            android:background="#00FFAA"
+            android:gravity="center"
+
+            android:shadowColor="@color/red"
+            android:shadowRadius="3.0"
+            android:shadowDx="10.0"
+            android:shadowDy="10.0"
+
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusableInTouchMode="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <requestFocus/>
+        </TextView>
+
+<!--        </com.example.myapplication_1.MytextView>-->
+
+
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/Fr_TV"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/Fr_TV"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.5" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
