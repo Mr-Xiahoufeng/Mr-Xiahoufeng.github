@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/fj2"
+            android:scaleType="fitXY" />
+        <!--    android:maxHeight="120dp"
+                android:maxWidth="500dp"
+                android:adjustViewBounds="true"-->
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/input_new_password"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/common_font_size"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_password_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:drawableLeft="@drawable/baseline_phone_iphone_24"
+            android:background="@color/white"
+            android:hint="@string/input_new_password_hint"
+            android:inputType="numberPassword"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/common_font_size"
+            android:paddingLeft="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/input_new_password_again"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/common_font_size"
+            android:textColor="@color/black"/>
+
+        <EditText
+                android:id="@+id/et_password_second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:background="@color/white"
+                android:hint="@string/input_new_password_again_hint"
+                android:inputType="numberPassword"
+                android:maxLength="11"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/common_font_size"
+                android:paddingLeft="20dp"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/verifycode"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/common_font_size"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/et_verifycode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:hint="@string/input_verifycode"
+                android:inputType="numberPassword"
+                android:maxLength="11"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/common_font_size"
+                android:paddingLeft="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_verifycode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/get_verifycode"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_font_size"/>
+
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/fj2"
+            android:scaleType="fitXY" />
+    <!--    android:maxHeight="120dp"
+            android:maxWidth="500dp"
+            android:adjustViewBounds="true"-->
+</FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_password"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/login_by_password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"/>
+
+        <RadioButton
+            android:id="@+id/rb_verifycode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/login_by_verifycode"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/phone_number"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/common_font_size"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:drawableLeft="@drawable/baseline_phone_iphone_24"
+            android:background="@color/white"
+            android:hint="@string/input_phone_number"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/common_font_size"
+            android:paddingLeft="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/login_password"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/common_font_size"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:background="@color/white"
+                android:hint="@string/input_password"
+                android:inputType="numberPassword"
+                android:maxLength="11"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/common_font_size"
+                android:paddingLeft="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/forget_password"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/ck_remember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remember_password"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_font_size"/>
+
+
+</LinearLayout>
